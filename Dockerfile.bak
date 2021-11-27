@@ -85,7 +85,6 @@ COPY security.conf /etc/apache2/conf-available/
 COPY php.ini /usr/local/etc/php/
 COPY apache2.conf /etc/apache2/
 COPY 000-default.conf /etc/apache2/sites-enabled/
-RUN echo 'SetEnv APPLICATION_ENV "uat"' > /etc/apache2/conf-enabled/environment.conf
 
 ENV PATH=${PATH}:/opt/drupal/vendor/bin
 
