@@ -1,0 +1,21 @@
+runtime: custom
+env: flex
+service: uat-5p2p
+runtime_config:
+  document_root : web
+  front_controller_file: index.php
+
+network:
+  name: gc-uat-gae-5p2p
+  subnetwork_name: gc-uat-web-gae-5p2p
+
+resources:
+  cpu: 2
+  memory_gb: 4
+  disk_size_gb: 20
+
+automatic_scaling:
+  min_num_instances: 2
+  max_num_instances: 15
+  cool_down_period_sec: 180
+  target_concurrent_requests: 100

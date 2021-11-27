@@ -7,6 +7,5 @@ app.yaml - Configuration file for App Engine. This just declares the runtime is 
 Dockerfile - Defines your docker image. It extends from the official nginx Docker image and adds the configuration and static files.
 apache2.conf - A basic custom apache2 configuration file.
 web - Drupal web Root dir to be served by apache using docker on GAE.
-php.ini - this file is just a custom inin file if you want to modify something in it.
 
 
