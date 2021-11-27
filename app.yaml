@@ -1,13 +1,13 @@
 runtime: custom
 env: flex
-service: uat-5p2p
+service: drupa_gae
 runtime_config:
   document_root : web
   front_controller_file: index.php
 
 network:
-  name: gc-uat-gae-5p2p
-  subnetwork_name: gc-uat-web-gae-5p2p
+  name: VPC_name
+  subnetwork_name: Subnet_name
 
 resources:
   cpu: 2
