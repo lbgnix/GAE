@@ -9,4 +9,7 @@ apache2.conf - A basic custom apache2 configuration file.
 web - Drupal web Root dir to be served by apache using docker on GAE.
 php.ini - this file is just a custom inin file if you want to modify something in it.
 
+CMD to deploy on GAE -  got the root path of the application and run below cmd .
+
+gcloud app deploy
 
